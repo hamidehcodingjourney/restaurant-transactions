@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { fetchData } from "../actions";
 import convertDate from "../utils/convertDate";
 import convertDay from "../utils/convertDay";
+import convertPriceFromat from "../utils/convertPriceFormat";
 
 const TransactionsList = ({ filter, search }) => {
   const dispatch = useDispatch();
@@ -58,7 +59,9 @@ const TransactionsList = ({ filter, search }) => {
               item.amount < 0 ? "row text-danger px-2" : "row px-2 text-success"
             }
           >
-            <div className="col-md-6 text-start">{item.amount}</div>
+            <div className="col-md-6 text-start">
+              {convertPriceFromat(item.amount)}
+            </div>
             <div className="col-md-6 text-end">{item.type} </div>
           </div>
         </div>
