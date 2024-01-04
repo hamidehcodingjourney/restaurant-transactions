@@ -32,27 +32,31 @@ const TransactionsList = ({ filter, search }) => {
     if (currentDate !== item.date) {
       currentDate = item.date;
       headerDate = (
-        <h3>
+        <div>
           {convertDate(currentDate)} {convertDay(item.datetime)}
-        </h3>
+        </div>
       );
     }
 
     return (
-      <div key={item.id} className="p-3">
+      <div key={item.id} className="px-3 fs-6">
         <div
           className={
-            headerDate ? "bg-body-secondary p-2 text-dark text-end fs-5" : ""
+            headerDate
+              ? "bg-body-secondary p-2 text-dark text-end fw-bold mb-3"
+              : "mb-0 p-0"
           }
         >
-          {headerDate ? headerDate : null}
+          {headerDate}
         </div>
         <div>
           <div className="text-end px-2">
             {convertDate(item.date)} ،{item.time}
           </div>
           <div
-            className={item.amount < 0 ? "row text-danger px-2" : "row px-2"}
+            className={
+              item.amount < 0 ? "row text-danger px-2" : "row px-2 text-success"
+            }
           >
             <div className="col-md-6 text-start">{item.amount}</div>
             <div className="col-md-6 text-end">{item.type} </div>

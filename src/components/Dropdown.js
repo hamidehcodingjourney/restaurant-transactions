@@ -13,7 +13,7 @@ const Dropdown = ({ filter, setFilter }) => {
   return (
     <div>
       <select
-        className="border rounded border-gray-400 w-60 fs-5 p-1"
+        className="border rounded border-gray-400 w-60 fs-6 p-1"
         id="dropdown"
         name="dropdown"
         dir="rtl"
@@ -28,7 +28,7 @@ const Dropdown = ({ filter, setFilter }) => {
           </option>
         ))}
       </select>
-      <label htmlFor="dropdown" className="fs-4 fw-bold">
+      <label htmlFor="dropdown" className="fs-5 fw-bold p-2">
         نوع تراکنش{" "}
       </label>
     </div>

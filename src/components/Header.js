@@ -12,7 +12,7 @@ const Header = ({ filter, setFilter, search, setSearch }) => {
           <Search search={search} setSearch={setSearch} />
         </div>
       )}
-      <div className="col-md-4 fs-4 fw-bold"> تمام تراکنش‌ها</div>
+      <div className="col-md-4 fs-5 fw-bold text-end"> تمام تراکنش‌ها</div>
     </div>
   );
 };
