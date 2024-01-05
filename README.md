@@ -1,5 +1,5 @@
-<h3>Listing Restaurant Transactions</h3>
-<h5>Interview task for Miare company</h5>
+# Listing Restaurant Transactions
+#### Interview task for Miare company
 <ul>
   <li>Read transaction data from a JSON file and store it (using Redux).</li>
   <li>Sort and categorize transactions based on the date from newest to oldest.</li>
@@ -12,4 +12,4 @@
   <li>Implement a fixed top bar when scrolling, keeping it static while the rest of the page is scrolled.</li>
 </ul>
 
-<a href="https://hparsaeian-restaurant-transactions.netlify.app" target="_blank">https://hparsaeian-restaurant-transactions.netlify.app</a>
+<a href="https://hparsaeian-restaurant-transactions.netlify.app" target="_blank">hparsaeian-restaurant-transactions.netlify.app</a>
